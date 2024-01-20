@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
 import Languages from './components/Languages';
+import Projects from './components/Projects';
 
 function App() {
   const languages = [
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/intro" element={ <Intro /> } />
           <Route path='/languages' element={ <Languages languages={ languages }/> } />
+          <Route path='/projects' element={ <Projects />} />
         </Routes>
       </BrowserRouter>  
       
